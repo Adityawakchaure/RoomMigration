@@ -7,7 +7,7 @@ class Repositry(
 ) {
 
     fun insertContact(contact: Contact)= contactDao.InsertContact(contact)
-    fun deleteCOntact(contact: Contact)=contactDao.DeleteContact(contact)
+    fun deleteContact(contact: Contact)=contactDao.DeleteContact(contact)
     fun updateContact(contact: Contact)=contactDao.UpdateContact(contact)
     fun getAllContact()=contactDao.GetContact()
 }

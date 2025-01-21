@@ -7,5 +7,5 @@ import com.example.roomdatabasemigration.data.Dao.entity.Contact
 
 @Database(entities = [Contact::class], version = 1, exportSchema = false)
 abstract class contactDatabase:RoomDatabase() {
-   abstract val contactDao:ContactDao
+   abstract fun contactDao():ContactDao
 }
